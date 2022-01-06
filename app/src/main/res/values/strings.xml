@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Ktsitsa</string>
+    <string name="sign_in">התחבר</string>
+    <string name="src_ing">חיפוש ע"פ רכיבים</string>\
+    <string name="src_name">חיפוש ע"פ שם</string>
+    <string name="sign_up">הרשמה</string>
+    <string name="logout">התנתק</string>
+    <string name="text111">כותרת</string>
+    <string name="text_ingredients">מרכיבים</string>
+    <string name="allRespString">המומלצים</string>
+    <string name="Searching">חיפוש</string>
+    <string name="Search_name">חיפוש לפי שם</string>
+    <string name="Search_ing">יש לי בבית...</string>
+    <string name="waiting_recepies">ממתינים לאישור</string>
+    <string name="add_ing">הוספת רכיב</string>
+    <string name="not_app">מתכונים שטרם אושרו</string>
+    <string name="app">מתכונים מאושרים</string>
+    <string name="approving">אשר מתכון</string>
+    <string name="recommend">מתכון מומלץ</string>
+    <string name="send_notification_text">שלח התראה</string>
+    <string name="LOGO">K T S I T S A</string>
+    <string name="Text_custom_send_notify">שלח התראה מותאמת אישית</string>
+    <string name="Text_auto_notify_send">שלח התראה אוטומטית</string>
+</resources>

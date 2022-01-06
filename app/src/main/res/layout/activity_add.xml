@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAF6E8"
+    tools:context=".AddRecipes">
+
+
+    <LinearLayout
+        android:id="@+id/LLRecipeDynamic"
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:orientation="vertical"
+        android:padding="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/BtnAdd"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/Rl"
+        app:layout_constraintVertical_bias="0.855">
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/TxtTitle1"
+            style="@style/TextInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_margin="5dp"
+            android:hint="שם המתכון"
+            app:boxBackgroundColor="@color/browser_actions_bg_grey"
+            app:boxCornerRadiusBottomEnd="10dp"
+            app:boxCornerRadiusBottomStart="10dp"
+            app:boxCornerRadiusTopEnd="10dp"
+            app:boxCornerRadiusTopStart="10dp"
+            app:counterTextColor="@color/black"
+            app:hintTextColor="@color/black"
+
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/TxtTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txtInstructions1"
+            style="@style/TextInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_margin="5dp"
+            android:layout_marginTop="5dp"
+            android:hint="אופן ההכנה"
+            android:keyboardNavigationCluster="true"
+            app:boxBackgroundColor="@color/browser_actions_bg_grey"
+            app:boxCornerRadiusBottomEnd="10dp"
+            app:boxCornerRadiusBottomStart="10dp"
+            app:boxCornerRadiusTopEnd="10dp"
+            app:boxCornerRadiusTopStart="10dp"
+            app:counterTextColor="@color/black"
+            app:hintTextColor="@color/black">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txtInstructions"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="רכיבים:"
+            android:textAlignment="viewEnd"
+            android:textSize="18sp"
+
+            android:textStyle="bold|italic" />
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            >
+
+            <TextView
+                android:id="@+id/ingrid_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="רשימת רכיבים"
+
+
+                android:textAlignment="viewEnd" />
+        </androidx.core.widget.NestedScrollView>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/Rl"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+
+        app:layout_constraintBottom_toBottomOf="@+id/HomeBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="NotSibling">
+
+
+        <TextView
+            android:id="@+id/HomeBtn"
+            android:layout_width="437dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="36dp"
+            android:layout_marginEnd="37dp"
+            android:clickable="false"
+            android:fontFamily="@font/coustard_black"
+            android:onClick="HomeBtnClick"
+            android:shadowColor="#000000"
+            android:shadowDx="10"
+            android:shadowDy="10"
+            android:shadowRadius="5"
+            android:text="K  T  S  I  T  S  A"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/prime_color"
+            android:textSize="40dp"
+            android:textStyle="bold|italic"
+            android:typeface="monospace"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.023" />
+    </RelativeLayout>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/BtnAdd"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:onClick="add"
+        android:text="הוסף"
+        android:textColor="#FBEFD2"
+        android:textStyle="bold"
+        app:backgroundTint="@color/prime_color"
+        app:cornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Rl"
+        app:layout_constraintVertical_bias="0.475" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/BtnAddimag"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:onClick="addimage"
+        android:text="העלה תמונה"
+        android:textColor="#FBEFD2"
+        android:textStyle="bold"
+        app:backgroundTint="@color/prime_color"
+        app:cornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Rl"
+        app:layout_constraintVertical_bias="0.59" />
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imageView6"
+        android:layout_width="203dp"
+        android:layout_height="138dp"
+        android:layout_marginBottom="70dp"
+        android:scaleType="centerCrop"
+        app:shapeAppearanceOverlay="@style/circleImageView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BtnAddimag"
+        app:layout_constraintVertical_bias="1.0"
+        tools:srcCompat="@tools:sample/avatars"
+
+        />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

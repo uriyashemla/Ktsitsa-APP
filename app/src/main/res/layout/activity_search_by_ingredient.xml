@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".Search_by_Ingredient"
+android:orientation="vertical"
+android:background="#FAF6E8"
+    >
+
+<TextView
+    android:id="@+id/HomeBtn"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="36dp"
+    android:layout_marginEnd="37dp"
+    android:clickable="false"
+    android:fontFamily="@font/coustard_black"
+    android:shadowColor="#000000"
+    android:shadowDx="10"
+    android:shadowDy="10"
+    android:shadowRadius="5"
+    android:text="K  T  S  I  T  S  A"
+    android:textAlignment="center"
+    android:textAllCaps="false"
+    android:textColor="@color/prime_color"
+    android:textSize="40dp"
+    android:textStyle="bold|italic"
+    android:typeface="monospace"
+
+    />
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="בחר רכיבים לחיפוש"
+
+
+    android:textAlignment="center"
+    android:textSize="16dp"
+    android:textStyle="bold" />
+
+<SearchView
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:iconifiedByDefault="false"
+    android:id="@+id/ingSearchView"
+    android:queryHint="חיפוש"
+    />
+
+
+<ListView
+    android:id="@+id/ListViewIng"
+    android:layout_width="match_parent"
+    android:layout_height="400dp"
+    android:choiceMode="multipleChoice"
+
+    />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:orientation="horizontal"
+
+
+    >
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/filterB"
+        android:layout_width="388dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="20dp"
+        android:text="קטגוריות"
+        android:textColor="#FBEFD2"
+        android:textStyle="bold"
+        app:backgroundTint="@color/prime_color"
+        app:cornerRadius="20dp"
+
+        />
+
+
+</LinearLayout>
+
+<com.google.android.material.button.MaterialButton
+    android:id="@+id/BtnLVIng"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="חפש"
+    android:textColor="#FBEFD2"
+    android:textStyle="bold"
+    app:backgroundTint="@color/prime_color"
+    app:cornerRadius="20dp"
+    android:layout_marginHorizontal="12dp"
+
+
+    />
+
+
+</LinearLayout>

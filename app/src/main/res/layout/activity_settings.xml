@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAF6E8"
+    tools:context=".SettingsActivity">
+
+    <RelativeLayout
+        android:id="@+id/Rl"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toBottomOf="@+id/HomeBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="NotSibling">
+
+
+        <TextView
+            android:id="@+id/HomeBtn"
+            android:layout_width="437dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="36dp"
+            android:layout_marginEnd="37dp"
+            android:clickable="false"
+            android:fontFamily="@font/coustard_black"
+            android:onClick="HomeBtnClick"
+            android:shadowColor="#000000"
+            android:shadowDx="10"
+            android:shadowDy="10"
+            android:shadowRadius="5"
+            android:text="K  T  S  I  T  S  A"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/prime_color"
+            android:textSize="40dp"
+            android:textStyle="bold|italic"
+            android:typeface="monospace"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.023" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Rl"
+        app:layout_constraintVertical_bias="0.357">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/approvedrec"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_marginVertical="10dp"
+            android:text="@string/app"
+            android:textColor="#FBEFD2"
+            android:textStyle="bold"
+            app:backgroundTint="@color/prime_color"
+            app:cornerRadius="20dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/notapprovedrec"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_marginVertical="10dp"
+            android:text="@string/not_app"
+            android:textColor="#FBEFD2"
+            android:textStyle="bold"
+            android:visibility="gone"
+            app:backgroundTint="@color/prime_color"
+            app:cornerRadius="20dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/BtnAdminNotApp"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_marginVertical="10dp"
+            android:text="@string/waiting_recepies"
+            android:textColor="#FBEFD2"
+            android:textStyle="bold"
+            android:visibility="gone"
+            app:backgroundTint="@color/prime_color"
+            app:cornerRadius="20dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/Btnadding1"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_marginVertical="10dp"
+            android:text="@string/add_ing"
+            android:textColor="#FBEFD2"
+            android:textStyle="bold"
+            android:visibility="gone"
+            app:backgroundTint="@color/prime_color"
+            app:cornerRadius="20dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/sendnot"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_marginVertical="10dp"
+            android:text="@string/send_notification_text"
+            android:textColor="#FBEFD2"
+            android:textStyle="bold"
+            android:visibility="gone"
+            app:backgroundTint="@color/prime_color"
+            app:cornerRadius="20dp" />
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/BtnLogOut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="LogOut"
+        android:text="@string/logout"
+        android:textColor="#FBEFD2"
+        android:textStyle="bold"
+        app:backgroundTint="@color/prime_color"
+        app:cornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Rl"
+        app:layout_constraintVertical_bias="0.898" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
